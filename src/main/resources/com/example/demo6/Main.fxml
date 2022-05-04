@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="comb" prefHeight="706.0" prefWidth="1488.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.HelloController">
+   <children>
+      <BorderPane layoutX="8.0" prefHeight="707.0" prefWidth="730.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="8.0" AnchorPane.rightAnchor="777.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox prefHeight="706.0" prefWidth="352.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="362.0">
+                     <children>
+                        <Label prefHeight="73.0" prefWidth="213.0" text="  Pharmacy" textFill="#0059ff">
+                           <font>
+                              <Font name="Bodoni 72 Oldstyle Book" size="40.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                        </Label>
+                        <Label prefHeight="79.0" prefWidth="140.0" text="Market" textFill="#6f00ee">
+                           <font>
+                              <Font name="Bodoni 72 Book" size="37.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="36.0" prefWidth="292.0">
+                     <VBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="txtSearch" prefHeight="30.0" prefWidth="154.0" promptText="type here to search">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TextField>
+                        <Button mnemonicParsing="false" onAction="#Logine" prefHeight="29.0" prefWidth="58.0" text="Search" textFill="#0a40e1" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                 
+                  <VBox prefHeight="566.0" prefWidth="378.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="364.0" text="   Inforamation about medicine:" textFill="#0930dd">
+                           <font>
+                              <Font name="Bodoni 72 Smallcaps Book" size="25.0" />
+                           </font>
+                        </Label>
+                        <ListView fx:id="lblinfo1"  prefHeight="237.0" prefWidth="352.0" />
+                        <Label fx:id="lblinfo77" prefHeight="25.0" prefWidth="349.0">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font></Label>
+                        <Label fx:id="lblinfo2" prefHeight="25.0" prefWidth="336.0">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblinfo3" prefHeight="26.0" prefWidth="334.0">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER" prefHeight="58.0" prefWidth="392.0">
+                           <children>
+                              <Label prefHeight="32.0" prefWidth="52.0" text="Type:" textFill="#0526e5">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lbltype" prefHeight="28.0" prefWidth="138.0">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font></Label>
+                              <Label prefHeight="31.0" prefWidth="51.0" text=" price:" textFill="#0526e5">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lblprice" prefHeight="25.0" prefWidth="88.0" text="0$">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="21.0" prefWidth="330.0">
+                           <children>
+                              <Label prefHeight="34.0" prefWidth="124.0" text="Amount:" textFill="#0526e5">
+                                 <font>
+                                    <Font name="Heiti TC Light" size="23.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets left="10.0" />
+                                 </padding>
+                              </Label>
+                              <Spinner fx:id="amountSpinner" prefHeight="31.0" prefWidth="149.0" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="352.0">
+                           <children>
+                              <Separator prefHeight="3.0" prefWidth="75.0">
+                                 <opaqueInsets>
+                                    <Insets right="20.0" />
+                                 </opaqueInsets>
+                              </Separator>
+                              <Separator prefHeight="3.0" prefWidth="79.0">
+                                 <opaqueInsets>
+                                    <Insets left="20.0" />
+                                 </opaqueInsets>
+                              </Separator>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="43.0" prefWidth="352.0">
+                           <children>
+                              <Button fx:id="orderButton" alignment="CENTER" mnemonicParsing="false" onAction="#order" prefHeight="68.0" prefWidth="153.0" text="ORDER" textAlignment="CENTER" textFill="#0526e5">
+                                 <font>
+                                    <Font name="System Bold" size="24.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <Label fx:id="orderResult" alignment="CENTER" prefHeight="38.0" prefWidth="355.0" textFill="#0526e5">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children></VBox>
+         </left>
+         <center>
+            <Separator orientation="VERTICAL" prefHeight="707.0" prefWidth="0.0" BorderPane.alignment="TOP_LEFT">
+               <BorderPane.margin>
+                  <Insets left="20.0" />
+               </BorderPane.margin>
+            </Separator>
+         </center>
+         <right>
+            <BorderPane prefHeight="706.0" prefWidth="348.0" BorderPane.alignment="TOP_CENTER">
+               <top>
+                  <HBox prefHeight="116.0" prefWidth="348.0" styleClass="shopp" BorderPane.alignment="CENTER">
+                     <children>
+                        <Label prefHeight="88.0" prefWidth="107.0" text="Delivery: " textFill="#0825dd">
+                           <padding>
+                              <Insets left="20.0" />
+                           </padding>
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox prefHeight="116.0" prefWidth="99.0">
+                           <children>
+                              <Separator prefHeight="3.0" prefWidth="132.0" />
+                              <RadioButton mnemonicParsing="false" text="1 hour   20$">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="7.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" text="2 hour  10$">
+                                 <VBox.margin>
+                                    <Insets bottom="5.0" top="5.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                              <RadioButton mnemonicParsing="false" text="3 hour  5$">
+                                 <VBox.margin>
+                                    <Insets top="5.0" />
+                                 </VBox.margin>
+                              </RadioButton>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="82.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/delivery555.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </top>
+               <center>
+                  <VBox prefHeight="591.0" prefWidth="330.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <Separator prefWidth="200.0" />
+                        <ImageView fitHeight="160.0" fitWidth="172.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/siblingual444.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="70.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#Logine11" prefHeight="26.0" prefWidth="116.0" text="select">
+                           <VBox.margin>
+                              <Insets left="120.0" />
+                           </VBox.margin>
+                        </Button>
+                        <ImageView fitHeight="170.0" fitWidth="238.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/acetaminophen444.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="50.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#Logine22" prefHeight="26.0" prefWidth="120.0" text="Select">
+                           <VBox.margin>
+                              <Insets left="120.0" top="20.0" />
+                           </VBox.margin>
+                        </Button>
+                        <ImageView fitHeight="145.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@img/amlodipin444.png" />
+                           </image>
+                           <VBox.margin>
+                              <Insets left="85.0" />
+                           </VBox.margin>
+                        </ImageView>
+                        <Button mnemonicParsing="false" onAction="#Logine33" prefHeight="26.0" prefWidth="116.0" text="Select">
+                           <VBox.margin>
+                              <Insets left="120.0" top="10.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </center></BorderPane>
+         </right>
+      </BorderPane>
+      <Label layoutX="1103.0" layoutY="20.0" prefHeight="65.0" prefWidth="208.0" text="   About company:" textFill="#0040f2">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1062.0" layoutY="-4.0" orientation="VERTICAL" prefHeight="710.0" prefWidth="6.0" />
+      <Label alignment="TOP_LEFT" layoutX="1106.0" layoutY="81.0" prefHeight="26.0" prefWidth="258.0" text="Karimov Bekhruz U2010110" textFill="#0f0cd3">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="1104.0" layoutY="164.0" prefHeight="26.0" prefWidth="219.0" text="Kasimov Alisher U2010113" textFill="#0f0cd3">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="1104.0" layoutY="138.0" prefHeight="26.0" prefWidth="287.0" text="Inogomov Ulugbek U2010092" textFill="#0f0cd3">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="1105.0" layoutY="109.0" prefHeight="26.0" prefWidth="256.0" text="Ismoilov Nodir U2010095" textFill="#0f0cd3">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </Label>
+      <Separator layoutX="734.0" layoutY="-5.0" orientation="VERTICAL" prefHeight="699.0" prefWidth="13.0" />
+      <ImageView fitHeight="129.0" fitWidth="197.0" layoutX="802.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/acetmin444.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="872.0" layoutY="237.0" mnemonicParsing="false" onAction="#Logine44" text="Select" />
+      <Button layoutX="873.0" layoutY="468.0" mnemonicParsing="false" onAction="#Logine55" text="Select" />
+      <ImageView fitHeight="150.0" fitWidth="205.0" layoutX="820.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/amlodipin555.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="873.0" layoutY="656.0" mnemonicParsing="false" onAction="#Logine66" text="Select" />
+      <ImageView fitHeight="199.0" fitWidth="173.0" layoutX="812.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/kisspng444.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="490.0" fitWidth="300.0" layoutX="1096.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/ordernow.jpeg" />
+         </image>
+      </ImageView>
+      <Button layoutX="1174.0" layoutY="618.0" mnemonicParsing="false" onAction="#shopnow" prefHeight="33.0" prefWidth="108.0" text="Shop Now" textFill="#fc0e0e">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="792.0" layoutY="18.0" prefHeight="29.0" prefWidth="270.0" text="Advertisement board" textFill="#fc0707">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

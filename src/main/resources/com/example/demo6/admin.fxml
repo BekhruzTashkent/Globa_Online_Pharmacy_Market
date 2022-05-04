@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo6.HelloController">
+   <children>
+      <Separator layoutX="119.0" layoutY="1.0" orientation="VERTICAL" prefHeight="241.0" prefWidth="6.0" AnchorPane.leftAnchor="190.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Separator>
+      <Separator layoutX="393.0" layoutY="1.0" orientation="VERTICAL" prefHeight="241.0" prefWidth="6.0" AnchorPane.rightAnchor="190.0" />
+      <TextField fx:id="txttype1" layoutX="14.0" layoutY="32.0" promptText="type" />
+      <TextField fx:id="txttype2" layoutX="220.0" layoutY="33.0" promptText="type" />
+      <TextField fx:id="txttype3" layoutX="425.0" layoutY="33.0" promptText="type" />
+      <TextField fx:id="txtprice1" layoutX="14.0" layoutY="85.0" promptText="price" />
+      <TextField fx:id="txtamount1" layoutX="14.0" layoutY="141.0" promptText="amount" />
+      <TextField fx:id="txtprice2" layoutX="220.0" layoutY="86.0" promptText="price" />
+      <TextField fx:id="txtamount2" layoutX="220.0" layoutY="142.0" promptText="amount" />
+      <Button layoutX="54.0" layoutY="190.0" mnemonicParsing="false" onAction="#Insert" prefHeight="26.0" prefWidth="80.0" text="Insert" />
+      <Button layoutX="260.0" layoutY="190.0" mnemonicParsing="false" onAction="#Update" prefHeight="26.0" prefWidth="80.0" text="Update" />
+      <Button layoutX="465.0" layoutY="190.0" mnemonicParsing="false" onAction="#Delete" prefHeight="26.0" prefWidth="80.0" text="Delete" />
+      <Label fx:id="lableAdmin" alignment="CENTER" layoutX="4.0" layoutY="288.0" prefHeight="49.0" prefWidth="593.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1.0" layoutY="238.0" prefHeight="7.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>
